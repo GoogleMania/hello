@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application</title>
+    <style> 
+    body{
+      background-color: lightblue;
+      min-width: auto;
+      text-align: center;
+      margin: 50px;
+         
+    }
+    #h,p{
+      color: white;
+    }
+    #card{
+          
+      width: 200px;
+      min-height: 200px;
+      background-color: black;
+    }
+    
+    #btn{
+      width: 70px;
+      height: 30px;
+      background-color: yellow;
+      border: 2px black solid;
+      border-radius: 15px;
+    }
+     #btn:hover{
+      width: 70px;
+      height: 30px;
+      background-color: yellow;
+      border: 2px black solid;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <div id="card">   
+      <h1 id="h"> The Window Object</h1>
+      <h2 id="h">The promt menthod</h2>
+      <p id="p">Click the button to demonstrate the prompt box.</p>
+      <button id="btn" onClick="myFunction()"> Try it</button>
+      </div>
+      
+      
+      <script>  
+       
+       function myFunction(){
+         let person= prompt("Please enter your name",);
+         if(person != null){
+           document.getElementById("p").innerText="Hello " +  person + "! How are you today?";
+         }
+       }
+      
+      </script>
+  </body>
+</html>
